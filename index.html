@@ -1,1 +1,66 @@
-WEE WOO
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEE WOO SQUAD</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('https://www.transparenttextures.com/patterns/brick-wall-dark.png');
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #ff0000;
+      text-shadow: 2px 2px #000;
+    }
+    .blink {
+      animation: blink 1s steps(1, end) infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    .marquee {
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+      animation: marquee 15s linear infinite;
+    }
+    @keyframes marquee {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body class="text-center p-10">
+  <div class="text-5xl font-bold blink">🚒 WEE WOO SQUAD 🚒</div>
+  <div class="mt-4 marquee text-3xl">🔥 4WD. Japanese. Retired. But NOT TIRED. 🔥</div>
+  <img src="https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif" class="mx-auto mt-6 border-8 border-red-600 rounded-xl" alt="fire truck gif">
+  <div class="bg-yellow-300 p-6 mt-6 border-4 border-black rounded-xl shadow-xl">
+    <h2 class="text-4xl font-extrabold mb-2">About the Truck</h2>
+    <p class="text-lg">
+      Meet the 1997 Toyota Dyna JDM Firetruck. A legend reborn.<br>
+      4-wheel drive. Sirens that scream. Lights that blind.<br>
+      Imported from the fire-scorched peaks of Aichi Prefecture, Japan.<br>
+      This beast doesn't retire — it re-fires.
+    </p>
+  </div>
+  <div class="mt-8">
+    <h3 class="text-3xl font-bold">Specs</h3>
+    <ul class="list-disc list-inside text-left max-w-md mx-auto mt-4 text-yellow-200">
+      <li>4WD Manual Transmission</li>
+      <li>3L Diesel Engine - Roars like a dragon</li>
+      <li>Custom Winch and Bull Bar</li>
+      <li>Authentic Firefighting History</li>
+      <li>Sirens, Lights, and Unstoppable Vibes</li>
+    </ul>
+  </div>
+  <div class="mt-10">
+    <img src="https://media.giphy.com/media/3o6ZsWqDn6x0PBoqRq/giphy.gif" alt="flames gif" class="mx-auto">
+  </div>
+  <button class="mt-10 px-6 py-3 bg-red-600 text-white text-2xl font-bold rounded-full shadow-xl hover:bg-red-800 animate-bounce" onclick="alert('WEE WOO! WEE WOO!')">
+    Sound the Alarm!
+  </button>
+  <footer class="mt-20 text-sm text-gray-400">
+    © 1997-2025 WEE WOO SQUAD. Powered by VTEC and vibes.
+  </footer>
+</body>
+</html>
