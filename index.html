@@ -7,7 +7,8 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      background: url('https://www.transparenttextures.com/patterns/brick-wall-dark.png');
+      background-color: #111;
+      background-image: url('https://www.transparenttextures.com/patterns/3px-tile.png');
       font-family: "Comic Sans MS", cursive, sans-serif;
       color: #ff0000;
       text-shadow: 2px 2px #000;
@@ -28,12 +29,19 @@
       0%   { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
     }
+    .neon-border {
+      border: 5px dashed #39ff14;
+      box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+    }
+    .img-400 {
+      width: 400px;
+    }
   </style>
 </head>
 <body class="text-center p-10">
   <div class="text-5xl font-bold blink">🚒 WEE WOO SQUAD 🚒</div>
   <div class="mt-4 marquee text-3xl">🔥 4WD. Japanese. Retired. But NOT TIRED. 🔥</div>
-  <img src="https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif" class="mx-auto mt-6 border-8 border-red-600 rounded-xl" alt="fire truck gif">
+  <img src="https://i.imgur.com/sFvo0qr.jpeg" class="mx-auto mt-6 border-8 neon-border rounded-xl img-400" alt="fire truck image">
   <div class="bg-yellow-300 p-6 mt-6 border-4 border-black rounded-xl shadow-xl">
     <h2 class="text-4xl font-extrabold mb-2">About the Truck</h2>
     <p class="text-lg">
@@ -48,15 +56,15 @@
     <ul class="list-disc list-inside text-left max-w-md mx-auto mt-4 text-yellow-200">
       <li>4WD Manual Transmission</li>
       <li>3L Diesel Engine - Roars like a dragon</li>
-      <li>Custom Winch and Bull Bar</li>
+      <li>Custom Winch and Bull Bar (coming soon!)</li>
       <li>Authentic Firefighting History</li>
       <li>Sirens, Lights, and Unstoppable Vibes</li>
     </ul>
   </div>
   <div class="mt-10">
-    <img src="https://i.imgur.com/sFvo0qr.jpeg" alt="fire truck" width="400" class="mx-auto">
+    <img src="https://i.imgur.com/sFvo0qr.jpeg" alt="flames image" class="mx-auto img-400">
   </div>
-  <button class="mt-10 px-6 py-3 bg-red-600 text-white text-2xl font-bold rounded-full shadow-xl hover:bg-red-800 animate-bounce" onclick="alert('WEE WOO! WEE WOO!')">
+  <button class="mt-10 px-6 py-3 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white text-2xl font-bold rounded-full shadow-xl hover:from-yellow-500 hover:to-pink-500 animate-bounce" onclick="alert('WEE WOO! WEE WOO!')">
     Sound the Alarm!
   </button>
   <footer class="mt-20 text-sm text-gray-400">
